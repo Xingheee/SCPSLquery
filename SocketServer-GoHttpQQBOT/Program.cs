@@ -61,7 +61,7 @@ session.UseGroupMessage(async context =>
     }
         else if (context.Message.Text.Contains("round"))
     {
-        if (context.Sender.Role == CqRole.Owner)
+        if (context.Sender.UserId == 1506672651)
         {
             string[] sad = context.Message.Text.Split(Array.Empty<char>());
             if (sad[1] == "start")
