@@ -35,7 +35,7 @@ Console.WriteLine("\r\n[DIRSystem]: 使用Q群指令:cx,info(没有限制是哪�
 Console.WriteLine("\r\n[DIRSystem]: 正在连接WebSK-Success-Sk8080端口");
 session.UseGroupMessage(async context =>
 {
-    if (context.Message.Text == "cx")
+    if (context.Message.Text == "服务器信息")
     {
         string a = SocketServer("127.0.0.1", 10087, "cx");
         if (a == "null")
